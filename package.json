@@ -1,0 +1,18 @@
+{
+	"name": "greenBit-Photo-Gallary",
+	"version": "0.0.1",
+	"description": "ScrachPad prac",
+	"dependencies": {
+		"express": "latest",
+		"body-parser": "latest",
+		"compression": "latest",
+		"method-override": "latest",
+		"mongoose": "latest",
+		"morgan": "latest",
+		"express-session": "latest",
+		"ejs": "latest",
+		"passport": "latest",
+		"passport-local": "latest",
+		"connect-flash": "latest"
+	}
+}
