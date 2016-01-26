@@ -2,6 +2,9 @@
 	"name": "Green-bit Appln",
 	"dependencies": {
 		"bootstrap": "latest",
-		"jquery": "latest"
+		"jquery": "latest",
+		"angular": "latest",
+		"angular-route": "latest",
+		"angular-resource": "latest"
 	}
 }

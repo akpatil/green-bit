@@ -2,8 +2,23 @@
 <html>
 <head>
 	<title><%= title %></title>
+	<link rel="stylesheet" type="text/css" href="/libs/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="/libs/bootstrap/dist/css/bootstrap-theme.css" />
 </head>
 <body>
-	<h1>Hello World!</h1>
+	<h1>Hello <%= user %></h1>
+	<div ng-view></div>
 </body>
+
+<script src="libs/angular/angular.js"></script>
+<script src="libs/angular-route/angular-route.js"></script>
+<script src="libs/angular-resource/angular-resource.js"></script>
+
+<script src="userProfile/profile.client.module.js"></script>
+<script src="userProfile/services/profile.client.service.js"></script>
+<script src="userProfile/controllers/profile.client.controller.js"></script>
+<script src="userProfile/routes/profile.client.route.js"></script>
+
+<script type="text/javascript" src="application.js"></script>
+
 </html>
