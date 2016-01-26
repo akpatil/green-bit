@@ -1,4 +1,4 @@
-<div data-ng-controller="ProfileController" data-ng-init="findOne()">
+<div data-ng-controller="ProfileController">
 	<form data-ng-submit="update()" class="form-horizontal">
 		<div class="form-group">
 			<label for="firstname" class="col-sm-4">Firstname:</label>
@@ -55,4 +55,8 @@
 			<input type="submit" />
 		</div>
 	</form>
+
+	<div data-ng-show="error">
+		<strong data-ng-bind="error"></strong>
+	</div>
 </div>
