@@ -8,7 +8,7 @@ module.exports = function(app){
 
 	app.route('/signup').get(User.renderSignup).post(User.signup);
 	app.route('/signin').get(User.renderSignin).post(passport.authenticate('local', {
-		successRedirect: '/',
+		successRedirect: '/#!/profile',
 		failureRedirect: '/signin',
 		failureFlash: true
 	}));

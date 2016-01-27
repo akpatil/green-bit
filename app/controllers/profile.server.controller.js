@@ -15,7 +15,7 @@ var getErrorMessage = function(err){
 
 exports.create = function(req, res){
 	var profile = new Profile(req.body);
-	profile.username = req.user.username;
+	//profile.username = req.user.username;
 
 	profile.save(function(err){
 		if(err){
