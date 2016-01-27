@@ -1,10 +1,10 @@
-<div data-ng-controller="ProfileController">
-	<form data-ng-submit="create()" class="form-horizontal">
+<div data-ng-controller="ProfileController" data-ng-init="findOne()">
+	<form data-ng-submit="update()" class="form-horizontal">
 		<div class="form-group">
 			<label for="firstname" class="col-sm-4">Firstname:</label>
 
 			<div class="col-sm-8">
-				<input type="text" name="firstName" />
+				<input type="text" data-ng-model="profile.firstName" name="firstName" />
 			</div>
 		</div>
 
@@ -12,7 +12,7 @@
 			<label for="lastname" class="col-sm-4">Lastname:</label>
 
 			<div class="col-sm-8">
-				<input type="text" name="lastName" />
+				<input type="text" data-ng-model="profile.lastName" name="lastName" />
 			</div>
 		</div>
 

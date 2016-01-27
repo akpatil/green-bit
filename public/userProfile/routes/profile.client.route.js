@@ -5,7 +5,7 @@ angular.module('moduleProfile').config(['$routeProvider', function($routeProvide
 		templateUrl: 'userProfile/views/profile-view.client.view.html'
 	})
 
-	.when('/profile/create', {
-		templateUrl: 'userProfile/views/profile-create.client.view.html'
+	.when('/profile/update', {
+		templateUrl: 'userProfile/views/profile-update.client.view.html'
 	});
 }]);
