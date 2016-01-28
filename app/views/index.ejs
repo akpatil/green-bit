@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html xmlns:ng="http://angularjs.org">
 <head>
 	<title><%= title %></title>
 	<link rel="stylesheet" type="text/css" href="/libs/bootstrap/dist/css/bootstrap.css" />
@@ -11,7 +11,7 @@
 	<div ng-view></div>
 
 	<script type="text/javascript">
-		window.user = <%- user || 'null' %>
+		window.user = <%- user.username || 'null' %>
 	</script>
 </body>
 

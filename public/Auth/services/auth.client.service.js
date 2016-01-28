@@ -1,7 +1,7 @@
-angular.module('auth').factory('Authentication', function(){
+angular.module('auth').factory('Authentication', [function(){
 	this.user = window.user;
 
 	return {
 		user: this.user
-	}
-});
+	};
+}]);
