@@ -19,17 +19,6 @@ var UserSchema = new Schema({
 		default: '',
 		match: [/.+\@.+\..+/, 'Please enter a valid e-mail address']
 	},
-	age: {
-		type: String
-	},
-	gender: {
-		type: String,
-		required: 'Gender cannot be blank'
-	},
-	bio: {
-		type: String,
-		default: ''
-	},
 	username: {
 		type: String,
 		trim: true,

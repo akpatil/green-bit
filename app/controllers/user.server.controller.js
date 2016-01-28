@@ -47,7 +47,7 @@ exports.renderSignup = function(req, res){
 	}
 };
 
-exports.signup = function(req, res){
+exports.signup = function(req, res, next){
 	if(!req.user){
 		var user = new User(req.body);
 		var messsage = null;

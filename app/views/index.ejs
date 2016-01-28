@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="/libs/bootstrap/dist/css/bootstrap-theme.css" />
 </head>
 <body>
-	<h1>Hello <%= user %></h1>
+	<h1>Hello <%= user.fullname %></h1>
 	<div ng-view></div>
 </body>
 
@@ -14,10 +14,10 @@
 <script src="libs/angular-route/angular-route.js"></script>
 <script src="libs/angular-resource/angular-resource.js"></script>
 
-<script src="userProfile/profile.client.module.js"></script>
-<script src="userProfile/services/profile.client.service.js"></script>
-<script src="userProfile/controllers/profile.client.controller.js"></script>
-<script src="userProfile/routes/profile.client.route.js"></script>
+<script src="User/user.client.module.js"></script>
+<script src="User/services/user.client.service.js"></script>
+<script src="User/controllers/user.client.controller.js"></script>
+<script src="User/routes/user.client.route.js"></script>
 
 <script type="text/javascript" src="application.js"></script>
 

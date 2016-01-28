@@ -1,0 +1,7 @@
+<div data-ng-controller="UserController" data-ng-init="find()">
+	<ul>
+		<li data-ng-repeat="user in users">
+			<a href="/#!/user/{{ user._id }}/edit" data-ng-bind="user.username"></a>
+		</li>
+	</ul>
+</div>

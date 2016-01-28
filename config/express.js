@@ -41,7 +41,6 @@ module.exports = function(){
 
 	require('../app/routes/index.server.route')(app);
 	require('../app/routes/user.server.route')(app);
-	require('../app/routes/profile.server.route')(app);
 	
 	return app;
 };	
