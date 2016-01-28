@@ -1,4 +1,6 @@
-angular.module('user').controller('UserController', ['$scope', '$location', '$routeParams', 'Users', function($scope, $location, $routeParams, Users){
+angular.module('user').controller('UserController', ['$scope', '$location', '$routeParams', 'Authentication', 'Users', function($scope, $location, $routeParams, Authentication, Users){
+
+	$scope.authentication = Authentication;
 
 	$scope.find = function(){
 		$scope.users = Users.query();

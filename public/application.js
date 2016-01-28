@@ -1,6 +1,6 @@
 var mainApplicationModuleName = 'greenBit';
 
-var mainApplicationModule = angular.module(mainApplicationModuleName, ['ngRoute', 'ngResource', 'user']);
+var mainApplicationModule = angular.module(mainApplicationModuleName, ['ngRoute', 'ngResource', 'user', 'auth']);
 
 mainApplicationModule.config(['$locationProvider', function($locationProvider){
 	$locationProvider.hashPrefix('!');
