@@ -7,11 +7,11 @@
 </head>
 <body>
 
-	<h1>Hello <%= user.fullname %></h1>
+	<!-- <h1>Hello <%= user.fullname %></h1> -->
 	<div ng-view></div>
 
 	<script type="text/javascript">
-		window.user = <%- user.username || 'null' %>
+		window.user = <%- user || 'null' %>
 	</script>
 </body>
 

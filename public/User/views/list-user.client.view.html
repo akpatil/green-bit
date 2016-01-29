@@ -1,10 +1,7 @@
 <div data-ng-controller="UserController" data-ng-init="find()">
-	<ul>
-		<li data-ng-repeat="user in users">
-			<p data-ng-model="authentication.user.username"></p>
-			<div data-ng-show="user._id == authentication.user._id">
-				<a href="/#!/user/{{ user._id }}/edit" data-ng-bind="user.username"></a>
-			</div>	
-		</li>
-	</ul>
+	<span data-ng-repeat="user in users">
+		<div data-ng-show="user._id == authentication.user._id">
+			<a href="/#!/user/{{ user._id }}/edit" data-ng-bind="user.username"></a>
+		</div>
+	</span>
 </div>
