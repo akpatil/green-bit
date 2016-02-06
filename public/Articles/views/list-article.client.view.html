@@ -1,0 +1,8 @@
+<div data-ng-controller="ArticlesController" data-ng-init="find()">
+	<ul>
+		<li data-ng-repeat="article in articles">
+			<a data-ng-bind="article.title"></a>
+			<p data-ng-bind="article.content"></p>
+		</li>
+	</ul>
+</div>

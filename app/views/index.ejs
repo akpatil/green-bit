@@ -4,9 +4,39 @@
 	<title><%= title %></title>
 	<link rel="stylesheet" type="text/css" href="/libs/bootstrap/dist/css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="/libs/bootstrap/dist/css/bootstrap-theme.css" />
+	<link rel="stylesheet" type="text/css" href="/css/style-index.css" />
 </head>
 <body>
 
+	<div class="container">
+	<nav class="navbar navbar">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#triggerNav">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Green Bit</a>
+		</div>
+		<div class="collapse navbar-collapse" id="triggerNav">
+			<ul class="nav navbar-nav">
+				<li><a href="#"><span>Home</span></a></li>
+				<li><a href="#"><span>Articles</span></a></li>
+				<li><a href="#"><span>Contact</span></a></li>
+			</ul>
+			<ul class="user-drop-down nav navbar-nav pull-right">
+				<li><a href="#"><span>User</span></a>
+					<ul>
+						<li><a href="#" class="text-center"><span>Signed in as <%- userFullname %></span></a></li>
+						<li><a href="/#!/user"><span>Your Profile</span></a></li>
+						<li><a href="#"><span>Your Articles</span></a></li>
+						<li><a href="/signout"><span>Sign Out</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
 	<div ng-view></div>
 
 	<script type="text/javascript">
@@ -25,6 +55,11 @@
 <script src="User/services/user.client.service.js"></script>
 <script src="User/controllers/user.client.controller.js"></script>
 <script src="User/routes/user.client.route.js"></script>
+
+<script src="Articles/article.client.module.js"></script>
+<script src="Articles/services/article.client.service.js"></script>
+<script src="Articles/controllers/article.client.controller.js"></script>
+<script src="Articles/routes/article.client.route.js"></script>
 
 <script type="text/javascript" src="application.js"></script>
 

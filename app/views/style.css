@@ -1,0 +1,5 @@
+.user-drop-down >li {width: 180px;}
+.user-drop-down >li >ul { display: none; list-style-type: none; padding-left: 0; width: 180px; position: absolute; z-index: 100; }
+.user-drop-down >li:hover >ul {	display: block; }
+.user-drop-down >li >ul >li {padding: 5px 5px;}
+.user-drop-down >li >ul >li:hover {background-color: rgba(0, 0, 0, 0.2);}
