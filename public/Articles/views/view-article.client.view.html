@@ -1,0 +1,10 @@
+<div data-ng-controller="ArticlesController" data-ng-init="findOne()">
+	<div data-ng-show="authentication.user._id === article.creator._id">
+		<a href="/#!/article/{{article._id}}/edit">Edit</a>
+		<a href="/#!/"data-ng-click="delete();">Delete</a>
+	</div>
+
+	<p data-ng-bind="article.title"></p>
+	<p data-ng-bind="article.content"></p>
+	<small data-ng-bind="article.created"></small>
+</div>

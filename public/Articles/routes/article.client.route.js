@@ -16,4 +16,12 @@ angular.module('Article').config(['$routeProvider', function($routeProvider){
 	.when('/article/:articleId/edit', {
 		templateUrl: '/Articles/views/edit-article.client.view.html'
 	})
+
+	.when('/article/edit', {
+		templateUrl: '/Articles/views/edit-article.client.view.html'
+	})
+
+	.when('/articles', {
+		templateUrl: '/Articles/views/user-article.client.view.html'
+	})
 }]);

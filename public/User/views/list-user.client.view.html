@@ -1,7 +1,7 @@
 <div data-ng-controller="UserController" data-ng-init="find()">
 	<span data-ng-repeat="user in users">
 		<div data-ng-show="user._id == authentication.user._id">
-			<a href="/#!/user/{{ user._id }}/edit" data-ng-bind="user.username"></a>
+			<a href="/#!/user/{{ user._id }}/edit">Edit your profile..?</a>
 		</div>
 	</span>
 </div>

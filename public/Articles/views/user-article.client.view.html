@@ -1,8 +1,8 @@
 <div data-ng-controller="ArticlesController" data-ng-init="find()">
-	<ul>
-		<li data-ng-repeat="article in articles">
+	<span data-ng-repeat="article in articles">
+		<span data-ng-show="article.creator._id === authentication.user._id">
 			<a href="/#!/article/{{ article._id }}" data-ng-bind="article.title"></a>
 			<p data-ng-bind="article.content"></p>
-		</li>
-	</ul>
+		</span>
+	</span>
 </div>
