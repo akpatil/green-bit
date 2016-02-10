@@ -1,8 +1,13 @@
 <div data-ng-controller="ArticlesController" data-ng-init="find()">
-	<span data-ng-repeat="article in articles">
-		<span data-ng-show="article.creator._id === authentication.user._id">
-			<a href="/#!/article/{{ article._id }}" data-ng-bind="article.title"></a>
-			<p data-ng-bind="article.content"></p>
+	<div class="container">	
+		<span data-ng-repeat="article in articles">
+			<span data-ng-show="article.creator._id === authentication.user._id">
+				<div class="jumbotron">
+					<h1><a href="/#!/article/{{ article._id }}" data-ng-bind="article.title"></a></h1>
+					<p data-ng-bind="article.content"></p>
+					<small data-ng-bind="article.created"></small>
+				</div>
+			</span>
 		</span>
-	</span>
+	</div>	
 </div>

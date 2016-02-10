@@ -1,7 +1,55 @@
 <div data-ng-controller="UserController" data-ng-init="find()">
 	<span data-ng-repeat="user in users">
 		<div data-ng-show="user._id == authentication.user._id">
-			<a href="/#!/user/{{ user._id }}/edit">Edit your profile..?</a>
+			<div class="container">
+				<div class="jumbotron">
+					
+					<div class="row">
+						<div class="col-md-4">
+							<h3><span>Firstname:</span></h3>
+						</div>
+						<div class="col-md-8">
+							<h3><span>{{ user.firstName }}</span></h3>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<h3><span>Lastname:</span></h3>
+						</div>
+						<div class="col-md-8">
+							<h3><span>{{ user.lastName }}</span></h3>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<h3><span>Fullname:</span></h3>
+						</div>
+						<div class="col-md-8">
+							<h3><span>{{ user.fullname }}</span></h3>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<h3><span>Email:</span></h3>
+						</div>
+						<div class="col-md-8">
+							<h3><span>{{ user.email }}</span></h3>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="center-block">
+								<a href="/#!/user/{{ user._id }}/edit" class="col-md-offset-1 col-md-3 btn-primary profile-edit-button"><span>Edit Profile</span></a>
+							</div>
+						</div>
+					</div>
+
+				</div>	
+			</div>	
 		</div>
 	</span>
 </div>

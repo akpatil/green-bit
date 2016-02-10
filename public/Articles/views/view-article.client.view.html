@@ -1,10 +1,16 @@
 <div data-ng-controller="ArticlesController" data-ng-init="findOne()">
-	<div data-ng-show="authentication.user._id === article.creator._id">
-		<a href="/#!/article/{{article._id}}/edit">Edit</a>
-		<a href="/#!/"data-ng-click="delete();">Delete</a>
-	</div>
+	
+	<div class="container viewArticle">
+		<div class="jumbotron">
+			<h1 data-ng-bind="article.title"></h1>
+			<p data-ng-bind="article.content"></p>
+			<small data-ng-bind="article.created"></small>
+		</div>
 
-	<p data-ng-bind="article.title"></p>
-	<p data-ng-bind="article.content"></p>
-	<small data-ng-bind="article.created"></small>
+		<div data-ng-show="authentication.user._id === article.creator._id">
+			<a href="/#!/article/{{article._id}}/edit" class="btn-primary">Edit</a>
+			<a href="/#!/"data-ng-click="delete();" class="btn-danger">Delete</a>
+		</div>
+
+	</div>	
 </div>

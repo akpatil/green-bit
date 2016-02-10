@@ -21,3 +21,24 @@ input {
 .user-drop-down >li:hover >ul {	display: block; }
 .user-drop-down >li >ul >li {padding: 5px 5px;}
 .user-drop-down >li >ul >li:hover {background-color: rgba(0, 0, 0, 0.2);}
+
+/*-- Profile View --*/
+.profile-edit-button {
+	padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/*--  List Article --*/
+.listArticle >  .container > ul {
+	list-style-type: none;
+}
+
+/*-- View Article --*/
+.viewArticle a {
+	padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
