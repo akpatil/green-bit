@@ -13,4 +13,19 @@ module.exports = function(app){
 		failureFlash: true
 	}));
 	app.route('/signout').get(User.logout);
+
+	app.route('/signin-mobile').post(function(req, res, next){
+		passport.authenticate('local', function(err, user, response){
+			if(!user){
+				res.status(401).json({
+					'success': false
+				});
+			}
+			else {
+				res.status(201).json({
+					'success': true
+				});
+			}
+		})(req, res, next);
+	});
 };
